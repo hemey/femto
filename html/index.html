@@ -1,0 +1,70 @@
+<html>
+	<head>
+		 <meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,100,700" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/fullPage.js"></script>
+		<script src="scripts/paper.min.js"></script>
+		
+		<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<canvas id="MenuCanvas" resize="true" keepalive="true"></canvas>
+		
+		<ul id="Menu" class="menu">
+			<li data-menuanchor="MainSection" class="section-link">
+				<a href="#MainSection">Menu</a>
+				<ul class="menu">
+					<li data-menuanchor="AboutWebsiteSection" class="section-link section-link-1">
+						<a href="#AboutWebsiteSection">About Site</a>
+					</li>
+					<li data-menuanchor="BlogSection" class="section-link section-link-2">
+						<a href="#BlogSection">Blog</a>
+					</li>
+					<li data-menuanchor="WebsiteSection" class="section-link section-link-3">
+						<a href="#WebsiteSection">Websites</a>
+					</li>
+					<li data-menuanchor="ArtSection" class="section-link section-link-4">
+						<a href="#ArtSection">Art</a>
+					</li>
+					<li data-menuanchor="AboutMeSection" class="section-link section-link-5">
+						<a href="#AboutMeSection">About Me</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<div id="Sections">
+			<section data-anchor="MainSection" class="section">
+				<h1>Main Menu</h1>
+			</section>
+			<section data-anchor="AboutWebsiteSection" class="section">
+				<h1>About Site</h1>
+				<p>Story about site</p>
+			</section>
+			<section data-anchor="BlogSection" class="section">
+				<h1>Blog</h1>
+				<p>If possible I need to create a blog</p>
+			</section>
+			<section data-anchor="WebsiteSection" class="section">
+				<h1>Website</h1>
+				<p>Showcase some of my websites</p>
+			</section>
+			<section data-anchor="ArtSection" class="section">
+				<h1>Art</h1>
+				<p>Showcase some of my art</p>
+			</section>
+			<section data-anchor="AboutMeSection" class="section">
+				<h1>About Me</h1>
+				<p>I need to talk about me</p>
+			</section>
+		</div>
+		
+	</body>
+</html>

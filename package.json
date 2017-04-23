@@ -1,0 +1,30 @@
+{
+  "name": "femto",
+  "version": "0.0.0",
+  "description": "femtocosm website",
+  "main": "index.js",
+  "devDependencies": {
+    "jshint": "latest",
+    "browserify": "latest",
+    "nodemon": "~1.9.1",
+    "node-sass": "latest",
+    "mathsass": "latest",
+    "console-browserify": "~1.1.0",
+    "jquery": "latest",
+    "npm-css": "latest"
+  },
+  "scripts": {
+    "build:html": "cp -r html/* bin/",
+	"build:css": "node-sass scss/main.scss bin/styles/main.css",
+    "build:js": "cp -r js/* bin/scripts/",
+    "watch:html": "nodemon -e html -x \"npm run build:html\"",
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "watch:js": "nodemon -e js -x \"npm run build:js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run watch:html & npm run watch:css & npm run watch:js",
+    "build": "npm run build:html && npm run build:css && npm run build:js",
+    "start": "npm run watch & http-server \"bin\""
+  },
+  "author": "Henjo Mey",
+  "license": "BSD"
+}
